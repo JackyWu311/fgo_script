@@ -52,13 +52,7 @@ switch_confirm=(800,780)
 def choose_friend():
     #swipe((880,840),(740,300))
     time.sleep(1)
-    if exists(Template(r"tpl1670813966747.png", threshold=0.9, record_pos=(-0.396, -0.076), resolution=(1600, 900))):
-        touch(Template(r"tpl1670813966747.png", record_pos=(-0.396, -0.076), resolution=(1600, 900)))
-
-    elif exists(Template(r"tpl1670813991646.png", threshold=0.9, record_pos=(-0.396, 0.059), resolution=(1600, 900))):
-        touch(Template(r"tpl1670813991646.png", record_pos=(-0.396, 0.059), resolution=(1600, 900)))
-    elif exists(Template(r"tpl1677491902651.png", threshold=0.9, record_pos=(-0.398, -0.074), resolution=(1600, 900))):
-        touch(Template(r"tpl1677491902651.png", record_pos=(-0.398, -0.074), resolution=(1600, 900)))if exists(Template(r"tpl1679847250709.png", record_pos=(-0.134, 0.115), resolution=(1600, 900))):
+    if exists(Template(r"tpl1679847250709.png", record_pos=(-0.134, 0.115), resolution=(1600, 900))):
         touch(Template(r"tpl1679847250709.png", record_pos=(-0.134, 0.115), resolution=(1600, 900)))
     elif exists(Template(r"tpl1670813966747.png", threshold=0.9, record_pos=(-0.396, -0.076), resolution=(1600, 900))):
         touch(Template(r"tpl1670813966747.png", record_pos=(-0.396, -0.076), resolution=(1600, 900)))

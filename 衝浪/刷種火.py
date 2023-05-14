@@ -130,14 +130,18 @@ while True:
         touch_sleep(sk3_3,5)
 
         touch_sleep(ms,1)
-        touch_sleep(ms2,1)
+        touch_sleep(ms1,1)
         touch_sleep(cm3,5)
 
         touch_sleep(attack,3)
         touch_sleep(np3,1)
         touch_sleep(att1,1)
         touch_sleep(att2,1)
+        
         wait(Template(r"tpl1670814662761.png", record_pos=(0.39, 0.188), resolution=(1600, 900)),timeout=40)
+        touch_sleep(ms,1)
+        touch_sleep(ms2,1)
+        touch_sleep(cm3,5)
 
         touch_sleep(attack,3)
         touch_sleep(np3,1)

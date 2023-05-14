@@ -51,24 +51,34 @@ switch_confirm=(800,780)
 
 def choose_friend():
     #swipe((880,840),(740,300))
-    time.sleep(1)
-    if exists(Template(r"tpl1679847250709.png", record_pos=(-0.134, 0.115), resolution=(1600, 900))):
-        touch(Template(r"tpl1679847250709.png", record_pos=(-0.134, 0.115), resolution=(1600, 900)))
-    elif exists(Template(r"tpl1670813966747.png", threshold=0.9, record_pos=(-0.396, -0.076), resolution=(1600, 900))):
-        touch(Template(r"tpl1670813966747.png", record_pos=(-0.396, -0.076), resolution=(1600, 900)))
-    elif exists(Template(r"tpl1677491902651.png", threshold=0.9, record_pos=(-0.398, -0.074), resolution=(1600, 900))):
-        touch(Template(r"tpl1677491902651.png", record_pos=(-0.398, -0.074), resolution=(1600, 900)))
-    elif exists(Template(r"tpl1679847413719.png", record_pos=(-0.399, 0.076), resolution=(1600, 900))):
-        touch(Template(r"tpl1679847413719.png", record_pos=(-0.399, 0.076), resolution=(1600, 900)))
-    else:
-        touch(Template(r"tpl1670814147598.png", record_pos=(0.167, -0.181), resolution=(1600, 900)))
+    find_friend = False
+    for i in range(4):
         time.sleep(1)
-        touch(Template(r"tpl1670814178405.png", record_pos=(0.154, 0.158), resolution=(1600, 900)))
-        choose_friend()
+        if exists(Template(r"tpl1679847250709.png", record_pos=(-0.134, 0.115), resolution=(1600, 900))):
+            touch(Template(r"tpl1679847250709.png", record_pos=(-0.134, 0.115), resolution=(1600, 900)))
+            find_friend = True
+        #elif exists(Template(r"tpl1670813966747.png", threshold=0.9, record_pos=(-0.396, -0.076), resolution=(1600, 900))):
+        #    touch(Template(r"tpl1670813966747.png", record_pos=(-0.396, -0.076), resolution=(1600, 900)))
+        #    find_friend = True
+        #elif exists(Template(r"tpl1677491902651.png", threshold=0.9, record_pos=(-0.398, -0.074), resolution=(1600, 900))):
+        #    touch(Template(r"tpl1677491902651.png", record_pos=(-0.398, -0.074), resolution=(1600, 900)))
+        #    find_friend = True
+        #elif exists(Template(r"tpl1679847413719.png", record_pos=(-0.399, 0.076), resolution=(1600, 900))):
+        #    touch(Template(r"tpl1679847413719.png", record_pos=(-0.399, 0.076), resolution=(1600, 900)))
+        #    find_friend = True        
+        elif i < 3 and not find_friend:
+            swipe((880,840),(740,300))
+        elif i >= 3 and not find_friend:
+            touch(Template(r"tpl1670814147598.png", record_pos=(0.167, -0.181), resolution=(1600, 900)))
+            time.sleep(1)
+            touch(Template(r"tpl1670814178405.png", record_pos=(0.154, 0.158), resolution=(1600, 900)))
+            choose_friend()
+        if find_friend:
+            break
+
 def touch_sleep(cor,second):
     touch((cor[0],cor[1]))
     time.sleep(second)
-
 
 #if exists(Template(r"tpl1677398785398.png", record_pos=(0.212, -0.171), resolution=(1600, 900))):
  #   touch(Template(r"tpl1677398785398.png", record_pos=(0.212, -0.171), resolution=(1600, 900)))

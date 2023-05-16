@@ -76,8 +76,10 @@ def choose_friend():
         if find_friend:
             break
             
-def touch_sleep(cor,second):
+def touch_sleep(cor,second,skip=False):
     touch((cor[0],cor[1]))
+    if skip:
+        touch((840,460))
     time.sleep(second)
 
 while True:
@@ -107,17 +109,17 @@ while True:
         wait(Template(r"tpl1670814662761.png", record_pos=(0.39, 0.188), resolution=(1600, 900)),timeout=40)
     if exists(Template(r"tpl1670814662761.png", record_pos=(0.39, 0.188), resolution=(1600, 900))):
         time.sleep(1)
-        touch_sleep(sk3_1,5)
-        touch_sleep(sk1_1,5)
-        touch_sleep(sk2_1,5)
+        touch_sleep(sk3_1,3,True)
+        touch_sleep(sk1_1,3,True)
+        touch_sleep(sk2_1,3,True)
         touch_sleep(sk1_2,1)
-        touch_sleep(cm3,5)
+        touch_sleep(cm3,3,True)
         touch_sleep(sk1_3,1)
-        touch_sleep(cm3,5)
+        touch_sleep(cm3,3,True)
         touch_sleep(sk2_2,1)
-        touch_sleep(cm3,5)
+        touch_sleep(cm3,3,True)
         touch_sleep(sk2_3,1)
-        touch_sleep(cm3,5)
+        touch_sleep(cm3,3,True)
 
         touch_sleep(attack,3)
         touch_sleep(np3,1)
@@ -126,12 +128,12 @@ while True:
 
         wait(Template(r"tpl1670814662761.png", record_pos=(0.39, 0.188), resolution=(1600, 900)),timeout=40)
         touch_sleep(sk3_2,1)
-        touch_sleep(npBlue,5)
-        touch_sleep(sk3_3,5)
+        touch_sleep(npBlue,3,True)
+        touch_sleep(sk3_3,3,True)
 
         touch_sleep(ms,1)
         touch_sleep(ms1,1)
-        touch_sleep(cm3,5)
+        touch_sleep(cm3,3,True)
 
         touch_sleep(attack,3)
         touch_sleep(np3,1)
@@ -141,7 +143,7 @@ while True:
         wait(Template(r"tpl1670814662761.png", record_pos=(0.39, 0.188), resolution=(1600, 900)),timeout=40)
         touch_sleep(ms,1)
         touch_sleep(ms2,1)
-        touch_sleep(cm3,5)
+        touch_sleep(cm3,3,True)
 
         touch_sleep(attack,3)
         touch_sleep(np3,1)

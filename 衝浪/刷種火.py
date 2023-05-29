@@ -109,33 +109,33 @@ while True:
         wait(Template(r"tpl1670814662761.png", record_pos=(0.39, 0.188), resolution=(1600, 900)),timeout=40)
     if exists(Template(r"tpl1670814662761.png", record_pos=(0.39, 0.188), resolution=(1600, 900))):
         time.sleep(1)
-        touch_sleep(sk3_1,3,True)
+        touch_sleep(sk3_1,2,True)
         touch_sleep(sk1_3,1)
-        touch_sleep(cm3,3,True)
+        touch_sleep(cm3,2,True)
         touch_sleep(sk2_3,1)
-        touch_sleep(cm3,3,True)
+        touch_sleep(cm3,2,True)
 
-        touch_sleep(attack,3)
-        touch_sleep(np3,1)
-        touch_sleep(att1,1)
-        touch_sleep(att2,1)
-
-        wait(Template(r"tpl1670814662761.png", record_pos=(0.39, 0.188), resolution=(1600, 900)),timeout=40)
-        touch_sleep(sk1_1,3,True)
-        touch_sleep(sk2_1,3,True)
-
-        touch_sleep(attack,3)
-        touch_sleep(np3,1)
-        touch_sleep(att1,1)
-        touch_sleep(att2,1)
+        touch_sleep(attack,1.5)
+        touch_sleep(np3,0.7)
+        touch_sleep(att1,0.7)
+        touch_sleep(att2,0.7)
         
         wait(Template(r"tpl1670814662761.png", record_pos=(0.39, 0.188), resolution=(1600, 900)),timeout=40)
-        touch_sleep(sk3_3,3,True)
+        touch_sleep(sk1_1,2,True)
+        touch_sleep(sk2_1,2,True)
 
-        touch_sleep(attack,3)
-        touch_sleep(np3,1)
-        touch_sleep(att1,1)
-        touch_sleep(att2,1)
+        touch_sleep(attack,1.5)
+        touch_sleep(np3,0.7)
+        touch_sleep(att1,0.7)
+        touch_sleep(att2,0.7)
+        
+        wait(Template(r"tpl1670814662761.png", record_pos=(0.39, 0.188), resolution=(1600, 900)),timeout=40)
+        touch_sleep(sk3_3,2,True)
+
+        touch_sleep(attack,1.5)
+        touch_sleep(np3,0.7)
+        touch_sleep(att1,0.7)
+        touch_sleep(att2,0.7)
 
         wait(Template(r"tpl1670816825401.png", record_pos=(-0.34, -0.138), resolution=(1600, 900)),timeout=40)
         

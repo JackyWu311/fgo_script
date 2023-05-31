@@ -134,7 +134,7 @@ while True:
         touch_sleep(switch4,0.7)
         touch_sleep(switch_confirm,3.5,True)
         touch_sleep(ms,0.7)
-        touch_sleep(ms1,0.7)
+        touch_sleep(ms1,2,True)
         
         touch_sleep(sk2_1,2,True)
         touch_sleep(sk2_2,0.7)

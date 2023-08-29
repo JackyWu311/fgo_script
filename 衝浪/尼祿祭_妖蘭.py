@@ -78,14 +78,14 @@ def touch_sleep(cor,second,skip=False):
 while True:
 #if exists(Template(r"tpl1677398785398.png", record_pos=(0.212, -0.171), resolution=(1600, 900))):
  #   touch(Template(r"tpl1677398785398.png", record_pos=(0.212, -0.171), resolution=(1600, 900)))
-#if exists(Template(r"tpl1670824996123.png", record_pos=(-0.097, -0.051), resolution=(1600, 900))):
-#    touch(Template(r"tpl1670824996123.png", record_pos=(-0.097, -0.051), resolution=(1600, 900)))
-#    time.sleep(1)
-#    touch(Template(r"tpl1670825061804.png", record_pos=(0.155, 0.158), resolution=(1600, 900)))
-    if exists(Template(r"tpl1684072466348.png", record_pos=(-0.099, 0.064), resolution=(1600, 900))):
-        touch(Template(r"tpl1684072466348.png", record_pos=(-0.099, 0.064), resolution=(1600, 900)))
-        time.sleep(1)
-        touch(Template(r"tpl1670825061804.png", record_pos=(0.155, 0.158), resolution=(1600, 900)))
+    #if exists(Template(r"tpl1670824996123.png", record_pos=(-0.097, -0.051), resolution=(1600, 900))):
+    #    touch(Template(r"tpl1670824996123.png", record_pos=(-0.097, -0.051), resolution=(1600, 900)))
+    #    time.sleep(1)
+    #    touch(Template(r"tpl1670825061804.png", record_pos=(0.155, 0.158), resolution=(1600, 900)))
+    #if exists(Template(r"tpl1684072466348.png", record_pos=(-0.099, 0.064), resolution=(1600, 900))):
+    #    touch(Template(r"tpl1684072466348.png", record_pos=(-0.099, 0.064), resolution=(1600, 900)))
+    #    time.sleep(1)
+    #    touch(Template(r"tpl1670825061804.png", record_pos=(0.155, 0.158), resolution=(1600, 900)))
     if exists(Template(r"tpl1670813854855.png", record_pos=(0.401, -0.257), resolution=(1600, 900))):
         time.sleep(1)
         touch(Template(r"tpl1685497548444.png", threshold=0.8, record_pos=(-0.111, -0.18), resolution=(1600, 900)))
@@ -127,19 +127,14 @@ while True:
         
         wait(Template(r"tpl1670814662761.png", record_pos=(0.39, 0.188), resolution=(1600, 900)),timeout=40)
         touch_sleep(sk3_1,2,True)
-        touch_sleep(sk3_3,2,True)
         touch_sleep(ms,0.7)
         touch_sleep(ms3,0.7)
         touch_sleep(switch2,0.7)
         touch_sleep(switch4,0.7)
-        touch_sleep(switch_confirm,3.5,True)
-        touch_sleep(ms,0.7)
-        touch_sleep(ms1,2,True)
+        touch_sleep(switch_confirm,4,True)
         
         touch_sleep(sk2_1,2,True)
         touch_sleep(sk2_2,0.7)
-        touch_sleep(cm3,2,True)
-        touch_sleep(sk2_3,0.7)
         touch_sleep(cm3,2,True)
 
         touch_sleep(attack,1.4)

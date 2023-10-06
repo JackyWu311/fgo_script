@@ -48,6 +48,8 @@ switch4=(930,450)
 switch5=(1180,450)
 switch6=(1430,450)
 switch_confirm=(800,780)
+#攻擊指令間格時間
+attack_wait=0.6
 
 def choose_friend():
     #swipe((880,840),(740,300))
@@ -75,7 +77,8 @@ def touch_sleep(cor,second,skip=False):
 
 while True:
     #if exists(Template(r"tpl1677398785398.png", record_pos=(0.212, -0.171), resolution=(1600, 900))):
-     #   touch(Template(r"tpl1677398785398.png", record_pos=(0.212, -0.171), resolution=(1600, 900)))
+     #   touch(Template(r"tpl1677398785398.png", record_pos=(0.212, -0.171), resolution=(1600, 900)))assert_not_equal("actual value", "expected value", "Please fill in the test point.")
+
     if exists(Template(r"tpl1670824996123.png", record_pos=(-0.097, -0.051), resolution=(1600, 900))):
         touch(Template(r"tpl1670824996123.png", record_pos=(-0.097, -0.051), resolution=(1600, 900)))
         time.sleep(1)
@@ -97,41 +100,49 @@ while True:
         wait(Template(r"tpl1670814662761.png", record_pos=(0.39, 0.188), resolution=(1600, 900)),timeout=40)
     if exists(Template(r"tpl1670814662761.png", record_pos=(0.39, 0.188), resolution=(1600, 900))):
         time.sleep(1)
-        touch_sleep(sk3_1,5)
-        touch_sleep(sk1_1,5)
-        touch_sleep(sk2_1,5)
-        touch_sleep(sk1_2,1)
-        touch_sleep(cm3,5)
-        touch_sleep(sk1_3,1)
-        touch_sleep(cm3,5)
-        touch_sleep(sk2_2,1)
-        touch_sleep(cm3,5)
-        touch_sleep(sk2_3,1)
-        touch_sleep(cm3,5)
+        touch_sleep(sk3_1,2,True)
         
-        touch_sleep(ms,1)
-        touch_sleep(ms3,1)
-        touch_sleep(cm3,5)
+        touch_sleep(sk1_1,2,True)
+        touch_sleep(sk2_1,2,True)
+        touch_sleep(sk1_2,0.7)
+        touch_sleep(cm3,2,True)
         
-        touch_sleep(attack,3)
-        touch_sleep(np3,1)
-        touch_sleep(att1,1)
-        touch_sleep(att2,1)
+        touch_sleep(sk1_3,0.7)
+        touch_sleep(cm3,2,True)
+        
+        touch_sleep(sk2_3,0.7)
+        touch_sleep(cm3,2,True)
+        
+        touch_sleep(attack,1.4)
+        touch_sleep(np3,attack_wait)
+        touch_sleep(att1,attack_wait)
+        touch_sleep(att2,attack_wait,True)
         
         wait(Template(r"tpl1670814662761.png", record_pos=(0.39, 0.188), resolution=(1600, 900)),timeout=40)
-        touch_sleep(attack,3)
-        touch_sleep(np3,1)
-        touch_sleep(att1,1)
-        touch_sleep(att2,1)
-        wait(Template(r"tpl1670814662761.png", record_pos=(0.39, 0.188), resolution=(1600, 900)),timeout=40)
+        touch_sleep(sk3_3,2,True)
         
-        touch_sleep(sk3_3,5)
-        touch_sleep(sk3_2,1)
-        touch_sleep(npBlue,5)
-        touch_sleep(attack,3)
-        touch_sleep(np3,1)
-        touch_sleep(att1,1)
-        touch_sleep(att2,1)
+        touch_sleep(attack,1.4)
+        touch_sleep(np3,attack_wait)
+        touch_sleep(att1,attack_wait)
+        touch_sleep(att2,attack_wait)
+        wait(Template(r"tpl1670814662761.png", record_pos=(0.39, 0.188), resolution=(1600, 900)),timeout=40)
+        touch_sleep(sk2_2,0.7)
+        touch_sleep(cm3,2,True)
+        
+        touch_sleep(ms,0.7)
+        touch_sleep(ms3,0.7)
+        touch_sleep(switch2,0.7)
+        touch_sleep(switch4,0.7)
+        touch_sleep(switch_confirm,4,True)
+        
+        touch_sleep(sk2_1,2,True)
+        touch_sleep(sk2_2,0.7)
+        touch_sleep(cm3,2,True)
+        
+        touch_sleep(attack,1.4)
+        touch_sleep(np3,attack_wait)
+        touch_sleep(att1,attack_wait)
+        touch_sleep(att2,attack_wait)
         
         wait(Template(r"tpl1670816825401.png", record_pos=(-0.34, -0.138), resolution=(1600, 900)),timeout=40)
     if exists(Template(r"tpl1670816825401.png", record_pos=(-0.34, -0.138), resolution=(1600, 900))):
@@ -144,9 +155,9 @@ while True:
     if exists(Template(r"tpl1670816909527.png", record_pos=(0.365, 0.218), resolution=(1600, 900))):
         time.sleep(1)
         touch(Template(r"tpl1670816909527.png", record_pos=(0.365, 0.218), resolution=(1600, 900)))
-    if exists(Template(r"tpl1670826092002.png", record_pos=(-0.243, 0.199), resolution=(1600, 900))):
-        time.sleep(1)
-        touch(Template(r"tpl1670826092002.png", record_pos=(-0.243, 0.199), resolution=(1600, 900)))
+    #if exists(Template(r"tpl1670826092002.png", record_pos=(-0.243, 0.199), resolution=(1600, 900))):
+    #    time.sleep(1)
+    #    touch(Template(r"tpl1670826092002.png", record_pos=(-0.243, 0.199), resolution=(1600, 900)))
 
     if exists(Template(r"tpl1670817086687.png", record_pos=(0.156, 0.159), resolution=(1600, 900))):
         time.sleep(1)
